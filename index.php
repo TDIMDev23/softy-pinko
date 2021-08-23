@@ -8,8 +8,6 @@
     <meta http-equiv="Content-Language" content="en" >
     <meta name="description" content="<?=get_option('website_desc', "SmartPanel - #1 SMM Reseller Panel - Best SMM Panel for Resellers. Also well known for TOP SMM Panel and Cheap SMM Panel for all kind of Social Media Marketing Services. SMM Panel for Facebook, Instagram, YouTube and more services!")?>">
     <meta name="keywords" content="<?=get_option('website_keywords', "smm panel, SmartPanel, smm reseller panel, smm provider panel, reseller panel, instagram panel, resellerpanel, social media reseller panel, smmpanel, panelsmm, smm, panel, socialmedia, instagram reseller panel")?>">
-
-    <link rel="shortcut icon" type="image/x-icon" href="<?=get_option('website_favicon', BASE."assets/images/favicon.png")?>">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -24,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="https://tdimdev23.github.io/softy-pinko/assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://tdimdev23.github.io/softy-pinko/assets/css/font-awesome.css">
     <link rel="stylesheet" href="https://tdimdev23.github.io/softy-pinko/assets/css/style.css">
-    <link rel="shortcut icon" href="https://tdimdev23.github.io/softy-pinko/assets/images/logo.png">
+    <link rel="shortcut icon" href="https://tdimdev23.github.io/softy-pinko/logo.png">
         <script type="text/javascript">
       var token = '<?=$this->security->get_csrf_hash()?>',
           PATH  = '<?=PATH?>',
@@ -155,7 +153,7 @@
         <div class="container" dir="rtl">
             <div class="row">
                 <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="https://tdimdev23.github.io/softy-pinko/assets/images/logo.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                    <img src="https://tdimdev23.github.io/softy-pinko/logo.png" class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix" style="text-align:right;">
