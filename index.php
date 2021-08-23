@@ -380,7 +380,7 @@
                             </ul>
                         </div>
                         <div class="pricing-footer">
-                            <a href="<?=cn("tickets")?>" class="main-button">اطلبها الان</a>
+                            <a href="<?=cn("statistics")?>" class="main-button">اطلبها الان</a>
                         </div>
                     </div>
                 </div>
@@ -406,7 +406,7 @@
                             </ul>
                         </div>
                         <div class="pricing-footer">
-                            <a href="<?=cn("tickets")?>" class="main-button">اطلبها الان</a>
+                            <a href="<?=cn("statistics")?>" class="main-button">اطلبها الان</a>
                         </div>
                     </div>
                 </div>
@@ -432,7 +432,7 @@
                             </ul>
                         </div>
                         <div class="pricing-footer">
-                            <a href="<?=cn("tickets")?>" class="main-button">اطلبها الان</a>
+                            <a href="<?=cn("statistics")?>" class="main-button">اطلبها الان</a>
                         </div>
                     </div>
                 </div>
