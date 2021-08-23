@@ -53,7 +53,7 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="/" class="logo" style="display:flex;color:#ff589e;margin:15px;">
-                            <img height="50px" src="https://tdimdev23.github.io/softy-pinko/assets/images/logo.png" alt="https://trindatt.com"/>
+                            <img height="50px" src="https://tdimdev23.github.io/softy-pinko/logo.png" alt="https://trindatt.com"/>
                             <h1 style="font-family:sans;font-weight:bold;">Trin<span style="color:#a759d1">datt</span></h1>
                         </a>
                         <!-- ***** Logo End ***** -->
