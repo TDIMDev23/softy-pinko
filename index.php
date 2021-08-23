@@ -24,6 +24,7 @@
     <link rel="stylesheet" type="text/css" href="https://tdimdev23.github.io/softy-pinko/assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://tdimdev23.github.io/softy-pinko/assets/css/font-awesome.css">
     <link rel="stylesheet" href="https://tdimdev23.github.io/softy-pinko/assets/css/style.css">
+    <link rel="shortcut icon" href="https://tdimdev23.github.io/softy-pinko/assets/images/logo.png">
         <script type="text/javascript">
       var token = '<?=$this->security->get_csrf_hash()?>',
           PATH  = '<?=PATH?>',
@@ -46,7 +47,7 @@
     <!-- ***** Preloader End ***** -->
     
     <!-- ***** Header Area Start ***** -->
-    <?php if($display_html){?>
+    <?php if($display_html){}?>
     <header class="header-area header-sticky">
         <div class="container">
             <div class="row">
@@ -79,7 +80,6 @@
             </div>
         </div>
     </header>
-        <?php }?>
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Welcome Area Start ***** -->
