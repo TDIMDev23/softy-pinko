@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="ar">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Language" content="en" >
+    <meta name="description" content="<?=get_option('website_desc', "SmartPanel - #1 SMM Reseller Panel - Best SMM Panel for Resellers. Also well known for TOP SMM Panel and Cheap SMM Panel for all kind of Social Media Marketing Services. SMM Panel for Facebook, Instagram, YouTube and more services!")?>">
+    <meta name="keywords" content="<?=get_option('website_keywords', "smm panel, SmartPanel, smm reseller panel, smm provider panel, reseller panel, instagram panel, resellerpanel, social media reseller panel, smmpanel, panelsmm, smm, panel, socialmedia, instagram reseller panel")?>">
+
+    <link rel="shortcut icon" type="image/x-icon" href="<?=get_option('website_favicon', BASE."assets/images/favicon.png")?>">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
     <title>موقع ترندات - افضل خدمات السوشيال ميديا</title>
     <!--
       SOFTY PINKO
@@ -14,6 +24,14 @@
     <link rel="stylesheet" type="text/css" href="https://tdimdev23.github.io/softy-pinko/assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://tdimdev23.github.io/softy-pinko/assets/css/font-awesome.css">
     <link rel="stylesheet" href="https://tdimdev23.github.io/softy-pinko/assets/css/style.css">
+        <script type="text/javascript">
+      var token = '<?=$this->security->get_csrf_hash()?>',
+          PATH  = '<?=PATH?>',
+          BASE  = '<?=BASE?>';
+      var    deleteItem = '<?=lang("Are_you_sure_you_want_to_delete_this_item")?>';
+      var    deleteItems = '<?=lang("Are_you_sure_you_want_to_delete_all_items")?>';
+    </script>
+    <?=htmlspecialchars_decode(get_option('embed_head_javascript', ''), ENT_QUOTES)?>
     </head>
     <body>
     
@@ -28,6 +46,7 @@
     <!-- ***** Preloader End ***** -->
     
     <!-- ***** Header Area Start ***** -->
+    <?php if($display_html){?>
     <header class="header-area header-sticky">
         <div class="container">
             <div class="row">
@@ -42,12 +61,14 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav" dir="rtl">
                             <li><a href="#welcome" class="active">الرئيسية</a></li>
-                            <li><a href="#features">لماذا نحن</a></li>
-                            <li><a href="#work-process">مميزاتنا</a></li>
-                            <li><a href="#testimonials">معاملاتنا</a></li>
-                            <li><a href="#pricing-plans">عروض خاصة</a></li>
-                            <li><a href="http://trindatt.com/auth/login">لوحة التحكم</a></li>
                             <li><a href="#contact-us">اتصل بنا</a></li>
+                            <li><a href="<?=cn("services")?>">الخدمات</a></li>
+                            <?php if (!session('uid')) { ?>
+                            <li><a href="<?=cn("auth/login")?>">تسجيل دخول</a></li>
+                            <li><a href="<?=cn("auth/signup")?>">انشاء حساب</a></li>
+                            <?php }else{?>
+                            <li><a href="<?=cn("statistics")?>">الاحصائيات</a></li>
+                            <?php }?>
                         </ul>
                         <a class='menu-trigger'>
                             <span>القائمة الجانبية</span>
@@ -58,6 +79,7 @@
             </div>
         </div>
     </header>
+        <?php }?>
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Welcome Area Start ***** -->
@@ -70,7 +92,7 @@
                     <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12" dir="rtl">
                         <h1>المنصة الرائدة في مجال السوشيال مع ضمان الثبات على جميع الخدمات التي نقدمها.</h1>
                         <p>نحن نقدم جميع خدمات مواقع التواصل الاجتماعي مثل تحقيق شروط يوتيوب وزيادة المتابعين والتفاعلات لصفحاتكم الخاصة والمزيد من الخدمات الاخرى.</p>
-                        <a href="#features" class="main-button-slider">اكتشف المزيد 
+                        <a href="<?=cn('auth/signup')?>" class="main-button-slider">اكتشف المزيد 
                         <i class="fa fa-arrow-left"></i></a>
                     </div>
                 </div>
@@ -519,19 +541,44 @@
     </section>
     <!-- ***** Contact Us End ***** -->
     
+        <div class="modal-infor">
+      <div class="modal" id="notification">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h4 class="modal-title"><i class="fe fe-bell"></i> <?=lang("Notification")?></h4>
+              <button type="button" class="close" data-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+              <?=get_option('notification_popup_content')?>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal"><?=lang("Close")?></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">
             <div class="row">
                   <h3 style="text-align:center;color:#fff;width:100%;">النشرة الاخبارية</h3>
-                <form class="col-lg-12 col-md-12 col-sm-12 inlineBlock" action="" post="">
+                <form class="col-lg-12 col-md-12 col-sm-12 inlineBlock" action="<?php echo cn("client/subscriber"); ?>" data-redirect="<?php echo cn(); ?>"  method="POST">
                   <div class="input-group" style="width:35vw;min-width:350px">
                     <div class="input-group-prepend">
                       <button class="input-group-text btn" style="background:#8261ee;color:#fff" id="btnGroupAddon">Subscribe</button>
                     </div>
-                    <input type="email" class="form-control" placeholder="user@example.com" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                    <input type="email" class="form-control" name="email" placeholder="user@example.com" aria-label="Enter Your Email" aria-describedby="btnGroupAddon">
                   </div>
                 </form>
+                <div class="col-md-12 m-t-20">
+                  <div id="alert-message"></div>
+                </div>
                 <br><br>
                 <center class="col-lg-12 col-md-12 col-sm-12 inlineBlock">
                   <hr><hr class="hrlite"><hr>
@@ -557,7 +604,12 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="copyright">جميع &copy; الحقوق محفوظة 2021 موقع ترندات</p>
+                   
+                              <?php
+            $version = get_field(PURCHASE, ['pid' => 23595718], 'version');
+            $version = 'Ver'.$version;
+          ?>
+           <p class="copyright">جميع &copy; الحقوق محفوظة 2021 موقع ترندات</p> <?=(get_role("admin")) ? $version : "" ?>
                 </div>
             </div>
         </div>
@@ -578,7 +630,9 @@
     
     <!-- Global Init -->
     <script src="https://tdimdev23.github.io/softy-pinko/assets/js/custom.js"></script>
-    
+    <?php
+      $redirect = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    ?>
     <script>
       function watch() {
         var video=window.videoBox.style;
@@ -592,5 +646,26 @@
         }
       }
     </script>
+        <?php  if(segment(1) != 'auth'){?>
+    <!-- theme Js -->
+    <script src="<?=BASE?>themes/pergo/assets/js/theme.js"></script>
+    <?php } ?>
+    <!-- Script js -->
+    <script src="<?=BASE?>assets/js/process.js"></script>
+    <script src="<?=BASE?>assets/js/general.js"></script>
+    <?=htmlspecialchars_decode(get_option('embed_javascript', ''), ENT_QUOTES)?>
+    <script>
+      $(document).ready(function(){
+        var is_notification_popup = "<?=get_option('enable_notification_popup', 0)?>"
+        setTimeout(function(){
+            if (is_notification_popup == 1) {
+              $("#notification").modal('show');
+            }else{
+              $("#notification").modal('hide');
+            }
+        },500);
+     });
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </body>
 </html>
