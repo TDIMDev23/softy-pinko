@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html>
+<html lang="ru">
   <head>
     <meta name="description" content="">
     <meta charset="UTF-8">
@@ -53,12 +53,10 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="/" class="logo" style="display:flex;color:#ff589e;margin:15px;">
-                            <img height="50px" src="https://tdimdev23.github.io/softy-pinko/logo.png" alt="https://SmmTk.com"/>
-                            <h1 style="font-family:sans;font-weight:bold;">Smm<span style="color:#a759d1">Tk</span></h1>
-                        </a>
+                            <img height="50px" src="https://tdimdev23.github.io/softy-pinko/logo.png" alt="https://wixout.com"/></a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
-                        <ul class="nav" dir="rtl">
+                        <ul class="nav" dir="ltr">
                             <li><a href="#welcome" class="active">Главный</a></li>
                             <li><a href="#contact-us">позвони нам</a></li>
                             <li><a href="<?=cn("services")?>">Услуги</a></li>
@@ -87,11 +85,11 @@
         <div class="header-text">
             <div class="container">
                 <div class="row">
-                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12" dir="rtl">
+                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12" dir="ltr">
                         <h1>Ведущая платформа в социальной сфере с гарантией стабильности всех предоставляемых нами услуг.</h1>
                         <p>Мы предоставляем все услуги социальных сетей, такие как выполнение условий YouTube, увеличение числа подписчиков и взаимодействий для ваших личных страниц и многие другие услуги.</p>
                         <a href="<?=cn('auth/signup')?>" class="main-button-slider">Узнать больше 
-                        <i class="fa fa-arrow-left"></i></a>
+                        <i class="fa fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -150,13 +148,13 @@
 
     <!-- ***** Features Big Item Start ***** -->
     <section class="section padding-top-70 padding-bottom-0" id="features">
-        <div class="container" dir="rtl">
+        <div class="container" dir="ltr">
             <div class="row">
                 <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                     <img src="https://tdimdev23.github.io/softy-pinko/logo.png" class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
                 <div class="col-lg-1"></div>
-                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix" style="text-align:right;">
+                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix" style="text-align:left;">
                     <div class="left-heading">
                         <h2 class="section-title">Лучший сервис в сфере SMM!</h2>
                     </div>
@@ -182,14 +180,14 @@
                 <div class="row">
                     <div class="offset-lg-3 col-lg-6">
                         <div class="info">
-                            <h1>مميزاتنا</h1>
+                            <h1>Наши преимущества</h1>
                             <p>Мы предлагаем вам самые важные функции, которые выделяют нас в области социальных сетей.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- ***** Mini Box Start ***** -->
-                <div class="row" dir="rtl">
+                <div class="row" dir="ltr">
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
                         <a href="#" class="mini-box">
                             <i><img src="https://tdimdev23.github.io/softy-pinko/assets/images/work-process-item-01.png" alt=""></i>
@@ -240,7 +238,7 @@
     <!-- ***** Home Parallax End ***** -->
 
     <!-- ***** Testimonials Start ***** -->
-    <section class="section" id="testimonials" dir="rtl">
+    <section class="section" id="testimonials" dir="ltr">
         <div class="container">
             <!-- ***** Section Title Start ***** -->
             <div class="row">
@@ -258,7 +256,7 @@
                 <!-- ***** Testimonials Item Start ***** -->
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="team-item">
-                        <div class="team-content" style="text-align:right">
+                        <div class="team-content" style="text-align:left">
                             <i><img src="https://tdimdev23.github.io/softy-pinko/assets/images/testimonial-icon.png" alt=""></i>
                             <p>Попробовав несколько сайтов, которые заявляют о «экспресс-доставке», я рад, что наконец нашел эту услугу. Они действительно начали доставлять через 5 секунд после моего платежа!</p>
                             <div class="user-image">
@@ -276,7 +274,7 @@
                 <!-- ***** Testimonials Item Start ***** -->
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="team-item">
-                        <div class="team-content" style="text-align:right">
+                        <div class="team-content" style="text-align:left">
                             <i><img src="https://tdimdev23.github.io/softy-pinko/assets/images/testimonial-icon.png" alt=""></i>
                             <p>Я не могу не подчеркнуть, насколько я доволен полученными услугами. Спасибо всем, мой аккаунт в Instagram становится активным! Вы не только заработали себе постоянного покупателя, но и друга на всю жизнь.</p>
                             <div class="user-image">
@@ -294,7 +292,7 @@
                 <!-- ***** Testimonials Item Start ***** -->
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="team-item">
-                        <div class="team-content" style="text-align:right">
+                        <div class="team-content" style="text-align:left">
                             <i><img src="https://tdimdev23.github.io/softy-pinko/assets/images/testimonial-icon.png" alt=""></i>
                             <p>После нескольких экспериментов я наконец нашел эту услугу, где я купил посещения своего блога, и частота появления моего блога увеличилась в поисковых системах!</p>
                             <div class="user-image">
@@ -319,7 +317,7 @@
             <div class="container">
                 <div class="row">
                     <div class="offset-lg-3 col-lg-6">
-                        <div class="info" dir="rtl">
+                        <div class="info" dir="ltr">
                             <h1>просмотреть видео</h1>
                             <p>В этом видео мы представляем вам услуги, которые мы предоставляем нашим клиентам!</p>
                         </div>
@@ -345,7 +343,7 @@
     <!-- ***** Video show End ***** -->
 
     <!-- ***** Pricing Plans Start ***** -->
-    <section class="section colored" id="pricing-plans" dir="rtl">
+    <section class="section colored" id="pricing-plans" dir="ltr">
         <div class="container">
             <!-- ***** Section Title Start ***** -->
             <div class="row">
@@ -478,7 +476,7 @@
     <!-- ***** Counter Parallax End ***** -->   
 
     <!-- ***** Contact Us Start ***** -->
-    <section class="section colored" id="contact-us" dir="rtl">
+    <section class="section colored" id="contact-us" dir="ltr">
         <div class="container">
             <!-- ***** Section Title Start ***** -->
             <div class="row">
@@ -492,12 +490,12 @@
 
             <div class="row">
                 <!-- ***** Contact Text Start ***** -->
-                <div class="col-lg-4 col-md-6 col-sm-12" style="text-align:right">
+                <div class="col-lg-4 col-md-6 col-sm-12" style="text-align:left">
                     <h5 class="margin-bottom-30">Поддерживать связь:</h5>
                     <div class="contact-text">
                         <p>Режим работы: все дни кроме пятницы.</p>
                         <p>Электронная почта поддержки : 
-                        <a href="mailto:support@SmmTk.com">support@wixout.com</a>.
+                        <a href="mailto:support@wixout.com">support@wixout.com</a>.
                         </p>
                         <p>Номер телефона / WhatsApp : 0123456789.</p>
                     </div>
@@ -524,7 +522,7 @@
                                 <textarea name="message" class="form-control" id="message" placeholder="ваше письмо" required=""></textarea>
                               </fieldset>
                             </div>
-                            <div class="col-lg-12" style="text-align:right">
+                            <div class="col-lg-12" style="text-align:left">
                               <fieldset>
                                 <button type="submit" id="form-submit" class="main-button">Отправить сейчас</button>
                               </fieldset>
@@ -569,9 +567,9 @@
                 <form class="col-lg-12 col-md-12 col-sm-12 inlineBlock" action="<?php echo cn("client/subscriber"); ?>" data-redirect="<?php echo cn(); ?>"  method="POST">
                   <div class="input-group" style="width:35vw;min-width:350px">
                     <div class="input-group-prepend">
-                      <button class="input-group-text btn" style="background:#8261ee;color:#fff" id="btnGroupAddon">Subscribe</button>
-                    </div>
                     <input type="email" class="form-control" name="email" placeholder="user@example.com" aria-label="Enter Your Email" aria-describedby="btnGroupAddon">
+                    </div>
+                      <button class="input-group-text btn" style="background:#8261ee;color:#fff" id="btnGroupAddon">Subscribe</button>
                   </div>
                 </form>
                 <div class="col-md-12 m-t-20">
