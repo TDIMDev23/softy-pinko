@@ -13,7 +13,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <title>موقع ترندات - افضل خدمات السوشيال ميديا</title>
+    <title>موقع SmmTk - افضل خدمات السوشيال ميديا</title>
     <!--
       SOFTY PINKO
       https://templatemo.com/tm-535-softy-pinko
@@ -53,8 +53,8 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="/" class="logo" style="display:flex;color:#ff589e;margin:15px;">
-                            <img height="50px" src="https://tdimdev23.github.io/softy-pinko/logo.png" alt="https://trindatt.com"/>
-                            <h1 style="font-family:sans;font-weight:bold;">Trin<span style="color:#a759d1">datt</span></h1>
+                            <img height="50px" src="https://tdimdev23.github.io/softy-pinko/logo.png" alt="https://SmmTk.com"/>
+                            <h1 style="font-family:sans;font-weight:bold;">Smm<span style="color:#a759d1">Tk</span></h1>
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -497,7 +497,7 @@
                     <div class="contact-text">
                         <p>اوقات العمل : جميع الايام ما عدا يوم الجمعة.</p>
                         <p>البريد الالكتروني الخاص بالدعم : 
-                        <a href="mailto:support@trindatt.com">support@trindatt.com</a>.
+                        <a href="mailto:support@SmmTk.com">support@SmmTk.com</a>.
                         </p>
                         <p>رقم الهاتف/الواتساب : 0123456789.</p>
                     </div>
@@ -607,7 +607,7 @@
             $version = get_field(PURCHASE, ['pid' => 23595718], 'version');
             $version = 'Ver'.$version;
           ?>
-           <p class="copyright">جميع &copy; الحقوق محفوظة 2021 موقع ترندات</p> <?=(get_role("admin")) ? $version : "" ?>
+           <p class="copyright">جميع &copy; الحقوق محفوظة 2021 موقع SmmTk</p> <?=(get_role("admin")) ? $version : "" ?>
                 </div>
             </div>
         </div>
